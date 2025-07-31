@@ -1,0 +1,84 @@
+body {
+  padding-top: 70px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: #f7f5ef;
+  color: #41321a;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Slab', serif;
+  color: #5a3e2b;
+}
+
+.hero-section {
+  background-image: url('assets/hero.png');
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.hero-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #5a3e2b !important;
+}
+.navbar .navbar-brand, .navbar .nav-link {
+  color: #fff !important;
+}
+.navbar .nav-link:hover {
+  color: #d6a270 !important;
+}
+
+/* Primary button */
+.btn-primary {
+  background-color: #d6a270;
+  border-color: #d6a270;
+  color: #5a3e2b;
+}
+.btn-primary:hover {
+  background-color: #b8864b;
+  border-color: #b8864b;
+  color: #5a3e2b;
+}
+
+/* Scroll to top button */
+#scrollTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  z-index: 1000;
+  background-color: #d6a270;
+  border: none;
+  color: #5a3e2b;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
